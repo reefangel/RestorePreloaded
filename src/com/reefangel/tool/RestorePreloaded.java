@@ -83,14 +83,10 @@ import java.net.URISyntaxException;
 	    		return;
 	    	}
 
-	    	try {
-	    		editor.getBase();
-	    		Base.copyFile(new File (Base.getSketchbookFolder().getPath() + "/RA_Preloaded/features.txt"), new File (Base.getSketchbookFolder().getPath() + "/libraries/ReefAngel_Features/ReefAngel_Features.h"));
-				//copy(Base.getSketchbookFolder().getPath() + "/RA_Preloaded/features.txt",Base.getSketchbookFolder().getPath() + "/libraries/ReefAngel_Features/ReefAngel_Features.h");
-				editor.getBase().handleOpenReplace(Base.getSketchbookFolder().getPath() + "/RA_Preloaded/RA_Preloaded.ino");
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}
+    		editor.getBase();
+//	    		Base.copyFile(new File (Base.getSketchbookFolder().getPath() + "/RA_Preloaded/features.txt"), new File (Base.getSketchbookFolder().getPath() + "/libraries/ReefAngel_Features/ReefAngel_Features.h"));
+			//copy(Base.getSketchbookFolder().getPath() + "/RA_Preloaded/features.txt",Base.getSketchbookFolder().getPath() + "/libraries/ReefAngel_Features/ReefAngel_Features.h");
+			editor.getBase().handleOpenReplace(Base.getSketchbookFolder().getPath() + "/RA_Preloaded/RA_Preloaded.ino");
 			
 			if (!ShowStep1()) return;
 			
