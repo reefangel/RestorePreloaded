@@ -143,7 +143,7 @@ public class RestorePreloaded implements Tool {
 		JLabel text = new JLabel("<HTML><br>Please connect the USB-TTL cable to your Reef Angel Controller.<br>Make sure the controller is powered up.<br><br></HTML>");
 		panel2.add(text);
 		ImageIcon iconnection = null;
-		iconnection = new ImageIcon(Base.getSketchbookFolder().getPath() + "/tools/Wizard/data/connection.png");
+		iconnection = new ImageIcon(Base.getSketchbookFolder().getPath() + "/tools/RestorePreloaded/data/connection.png");
 		JLabel c = new JLabel(iconnection);
 		panel2.add(c);
 		panel.add(panel2);
@@ -269,7 +269,7 @@ public class RestorePreloaded implements Tool {
 		JPanel panel1 = new JPanel(); 
 		panel1.setLayout(new BoxLayout( panel1, BoxLayout.PAGE_AXIS));
 		ImageIcon icon=null;
-		icon = new ImageIcon(Base.getSketchbookFolder().getPath() + "/tools/Wizard/data/ra_small.png");
+		icon = new ImageIcon(Base.getSketchbookFolder().getPath() + "/tools/RestorePreloaded/data/ra_small.png");
 		JLabel logo=new JLabel(icon);
 		panel1.add(logo);
 		logo.setAlignmentX(Component.CENTER_ALIGNMENT);
